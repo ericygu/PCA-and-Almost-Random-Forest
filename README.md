@@ -19,13 +19,20 @@ tree in your forest, chose a random subspace that the tree will be created on.
 Each tree is built using a bootstrap sample and random subset of the features.
 
 (a) Built the adaptation of the random forest, supporting the following parameters:
+
 • nest: the number of trees in the forest
+
 • maxFeat: the maximum number of features to consider in each tree
+
 • criterion: the split criterion – either gini or entropy
+
 • maxDepth: the maximum depth of each tree
+
 • minSamplesLeaf: the minimum number of samples per leaf node
+
 • train: Given a feature matrix and the labels, learn the random forest using the
 data. The return value should be the OOB error associated with the trees up to that
 point. For example, at 5 trees, calculate the random forest predictor by averaging
 only those trees where the bootstrap sample does not contain the observation.
+
 • predict: Given a feature matrix, predict the responses for each sample.
